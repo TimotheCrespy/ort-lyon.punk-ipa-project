@@ -249,6 +249,7 @@ S'aider de la documentation de l'API pour déterminer l'URL complète à appeler
     - `name` (nom de la bière),
     - `description` (description de la bière)
     - `abv` (poucentage d'alcool de la bière)
+
 (Aide : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
 18. Afficher à l'aide de la directive appropriée tous les éléments de ce nouveau tableau sous forme de liste HTML.
