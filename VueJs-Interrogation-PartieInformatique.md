@@ -102,7 +102,7 @@ white-space: nowrap;
 - Liste des bières
 - Détails d'une bière
 
-13. Ils importent aussi chacun le package `axios`.
+13. Ils importent aussi chacun le package `axios`, qui sera utilisé plus tard.
 
 14. Importer les deux composants précédents dans `App.vue`.
 
