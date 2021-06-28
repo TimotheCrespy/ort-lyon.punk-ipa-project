@@ -39,7 +39,7 @@
 
 8. Modifier le logo de Vue.js par l'image suivante, au mêmes dimensions : https://www.beerwulf.com/globalassets/ipa-pack-nlfrbe-final-v3_pack_22681_0.png (si l'URL renvoie une erreur, utiliser une autre image de pUnk IPA au choix).
 
-9. Appliquer les dimensions suivantes à l'image : 250px * 222px, en CSS, avec une classe CSS intitulée `logo-image`. Aide : https://v3.vuejs.org/guide/single-file-component.html. L'application doit alors répondre correctement dans le navigateur, en affichant simplement l'image d'appareil photo.
+9. Appliquer les dimensions suivantes à l'image : 250px * 222px, en CSS, avec une classe CSS intitulée `logo-image`. Aide : https://v3.vuejs.org/guide/single-file-component.html. L'application doit alors répondre correctement dans le navigateur, en affichant simplement l'image précédente.
 
 ### Menu principal
 
