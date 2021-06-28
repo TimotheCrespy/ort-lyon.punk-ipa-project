@@ -23,15 +23,15 @@ Donner les définitions des termes suivants, dans le contexte du framework Vue.j
 
 ### Questions
 
-13. Donner deux exemple d'API de navigateur.
+13. Donner deux exemples d'API de navigateur.
 14. Donner deux exemples d'API tierces.
-15. Quelle propriété (de l'options API) d'un composant Vue.js permet de passer des données d'un composant parent à un composant enfant ?
+15. Quelle propriété (de l'Options API) d'un composant Vue.js permet de passer des données d'un composant parent à un composant enfant ?
 16. Qu'est ce que permet de passer des données d'un composant Vue.js enfant à un composant parent ?
 17. Quelle est l'intérêt d'utiliser un gestionnaire de paquets comme NPM ?
 18. Quelle est la commande pour installer toutes les dépendances d'un projet comportant un fichier `package.json` ?
 19. Quelle est la commande pour ajouter une dépendance à un projet en tant que dépendance de développement ?
 20. Qu'est-ce que Vite ?
-21. Dans le cadre d'un projet frontend, quel est le nom de l'opération qui permet ensuite de livrer les sources du site web ?
+21. Dans le cadre d'un projet frontend, quel est le nom de l'opération qui permet ensuite de livrer les sources du site web ? En quoi consiste concrètement cette opération ?
 
 ## Rendu
 

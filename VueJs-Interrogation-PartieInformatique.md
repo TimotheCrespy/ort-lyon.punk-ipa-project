@@ -24,16 +24,21 @@
    ```
 
 2. Installer toutes les dépendances.
-3. Tester que tout fonctionne bien en lançant le serveur de développement puis en se rendant sur `localhost:3000`.
-4. Installer `axios` (https://github.com/axios/axios).
-5. Le design est toujours à ignorer, sauf lorsque demandé explicitement. Les bonnes pratiques sont à respecter : casse, indentation, orthographe, nommage des variables, nommage des fonctions, nommage des composants, etc.
 
+3. Tester que tout fonctionne bien en lançant le serveur de développement puis en se rendant sur `localhost:3000`.
+
+4. Installer `axios` (https://github.com/axios/axios).
+
+5. Le design est toujours à ignorer, sauf lorsque demandé explicitement. Les bonnes pratiques sont à respecter : casse, indentation, orthographe, nommage des variables, nommage des fonctions, nommage des composants, etc.
 
 ### Initialisation
 
 6. Supprimer le composant `HelloWorld.vue`.
+
 7. Supprimer dans la vue `App.vue` toutes les références à `HelloWorld.vue`.
+
 8. Modifier le logo de Vue.js par l'image suivante, au mêmes dimensions : https://www.beerwulf.com/globalassets/ipa-pack-nlfrbe-final-v3_pack_22681_0.png (si l'URL renvoie une erreur, utiliser une autre image de pUnk IPA au choix).
+
 9. Appliquer les dimensions suivantes à l'image : 250px * 222px, en CSS, avec une classe CSS intitulée `logo-image`. Aide : https://v3.vuejs.org/guide/single-file-component.html. L'application doit alors répondre correctement dans le navigateur, en affichant simplement l'image d'appareil photo.
 
 ### Menu principal
@@ -90,22 +95,22 @@ white-space: nowrap;
 11. Créer 2 nouveaux composant dont l'élément racine est une `<section>` :
 
 - `ListTab.vue`
-
 - `DetailsTab.vue`
 
 12. Ces 2 composants importent chacun le composant `Title.vue` , avec pour texte respectivement :
 
 - Liste des bières
-
-- Détail d'une bière
+- Détails d'une bière
 
 13. Ils importent aussi chacun le package `axios`.
+
 14. Importer les deux composants précédents dans `App.vue`.
-15. Créer un composant `Navbar.vue` à utiliser dans `App.vue`. Ce composant `Navbar.vue` comporte deux liens « Liste des bières » et « Détail d'une bière ». Implémenter dans ce composant un évènement personnalisé qui remonte au composant parent (`App.vue`) le lien qui a été cliqué. Implémenter dans `App.vue` un rendu conditionnel sur les deux composants `ListTab.vue` et  `DetailsTab.vue` pour afficher l'un ou l'autre en fonction du lien qui a été cliqué.
+
+15. Créer un composant `Navbar.vue` à utiliser dans `App.vue`. Ce composant `Navbar.vue` comporte deux liens « Liste des bières » et « Détails d'une bière ». Implémenter dans ce composant un évènement personnalisé qui remonte au composant parent (`App.vue`) le lien qui a été cliqué. Implémenter dans `App.vue` un rendu conditionnel sur les deux composants `ListTab.vue` et  `DetailsTab.vue` pour afficher l'un ou l'autre en fonction du lien qui a été cliqué.
 
 ### Onglet liste
 
-16. Dans le composant `ListTab.vue`, récupérer via l'API PunkAPI (https://punkapi.com) un tableau dans une variable de `data` comportant la liste de toutes les bières, sous cette forme :
+16. Dans le composant `ListTab.vue`, récupérer via l'API PunkAPI (https://punkapi.com) à l'aide d'`axios` un tableau dans une variable de `data` comportant la liste de toutes les bières, sous cette forme :
 
 ```json
 [
@@ -238,27 +243,29 @@ white-space: nowrap;
 ]
 ```
 
-​       S'aider de la documentation de l'API pour déterminer l'URL complète à appeler : https://punkapi.com/documentation/v2
+S'aider de la documentation de l'API pour déterminer l'URL complète à appeler : https://punkapi.com/documentation/v2
 
 17. Dans une computed du même composant, transformer le tableau récupéré via l'API (qui comporte un certain nombre d'objets avec beaucoup de propriétés) en tableau d'objets appelé `formattedBeerList` dont les propriétés sont seulement les suivantes :
     - `name` (nom de la bière),
     - `description` (description de la bière)
     - `abv` (poucentage d'alcool de la bière)
+(Aide : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
 
 18. Afficher à l'aide de la directive appropriée tous les éléments de ce nouveau tableau sous forme de liste HTML.
 
-### Onglet recherche classique
+### Onglet détails
 
 19. Dans le composant `DetailsTab.vue`, créer un formulaire simple comportant un champ nombre et un bouton de validation du formulaire intitulé « Rechercher ».
 
-20. Lier le contenu du champ textuel à une variable de `data` nommée `beerId`.
+20. Lier le contenu du champ textuel à une variable de `data` nommée `beerId`, àl'aide de la directive appropriée.
 
 21. Faire en sorte que la phrase suivante s'affiche lors du clic sur « Rechercher » si le contenu du champ est vide : « Veuillez renseigner un identifiant de bière. ».
+
 22. Faire en sorte que la phrase suivante s'affiche lors du clic sur « Rechercher » si le contenu du champ n'est pas un nombre : « Veuillez renseigner un identifiant de bière valide. ».
 
-23. Compléter le composant pour lancer la recherche lors du clic sur « Rechercher » et que le contenu du champ est correct. Pour cela, déterminer l'URL auprès de l'API (https://punkapi.com/documentation/v2), qui devra bien sûr comporter le contenu du champ.
+23. Compléter le composant pour lancer à l'aide d'`axios` la recherche lors du clic sur « Rechercher » et que le contenu du champ est correct. Pour cela, déterminer l'URL auprès de l'API (https://punkapi.com/documentation/v2), qui devra bien sûr comporter le contenu du champ.
 
-24. Si le retour de l'API est en erreur ou que aucun résultat n'a été trouvée, i.e. si la bière semble ne pas exister, afficher la phrase : « La bière n'a pas été trouvée... ».
+24. Si le retour de l'API est en erreur ou que aucun résultat n'a été trouvée, i.e. si la bière semble ne pas exister, afficher la phrase : « La bière n'a pas été trouvée. ».
 
 25. Si le retour de l'API est en succès (pour un identifiant de bière valide), récupérer dans une variable de `data` l'objet renvoyé, de la forme :
 
