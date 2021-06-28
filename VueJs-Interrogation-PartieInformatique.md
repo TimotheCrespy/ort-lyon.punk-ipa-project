@@ -43,7 +43,7 @@
 
 ### Menu principal
 
-10. Créer un nouveau composant `Title.vue` ayant en tant que `prop` une chaine de caractère obligatoire appelée `text`. Ce composant affiche le texte `text` dans un titre HTML de niveau 1, ayant la classe CSS `title`, comportant le CSS suivant :
+10. Créer un nouveau composant `Title.vue` ayant en tant que `prop` une chaine de caractère obligatoire appelée `text`. Ce composant affiche le texte `text` dans un titre HTML de niveau 1, ayant la classe CSS `title`, comportant le CSS suivant (attention à bien tout appliquer) :
 
 ```css
 font-family: 'playball', cursive;
