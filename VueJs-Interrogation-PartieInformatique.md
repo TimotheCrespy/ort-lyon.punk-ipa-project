@@ -92,7 +92,7 @@ white-space: nowrap;
 }
 ```
 
-11. Créer 2 nouveaux composant dont l'élément racine est une `<section>` :
+11. Créer 2 nouveaux composants dont l'élément racine est une `<section>` :
 
 - `ListTab.vue`
 - `DetailsTab.vue`
@@ -464,10 +464,7 @@ S'aider de la documentation de l'API pour déterminer l'URL complète à appeler
       </ul>
     </li>
     <li>
-      yeast
-      <ul>
-        <li>Wyeast 1056 - American Ale™</li>
-      </ul>
+      yeast: Wyeast 1056 - American Ale™
     </li>
   </ul>
 ```
